@@ -1,0 +1,70 @@
+/*1.General
+2.Navbar
+3.Home
+4.About
+5.Skills
+6.Projects
+7.Contact
+8.Footer*/
+/*custom css*/
+@media (max-width: 991px) {
+  section {
+    padding: 30px 0;
+  }
+  h2 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  h1 {
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  h1 {
+    font-size: 25px;
+    line-height: 48px;
+  }
+  p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  nav {
+    right: 0;
+    bottom: unset;
+    width: 100%;
+    /* background-color: var(--bg-dark-blue); */
+    backdrop-filter: blur(30px);
+  }
+  .banner_wrapper {
+    background-position: center 9rem;
+    backdrop-filter: blur(30px);
+  }
+
+  .header-scrolled {
+    height: auto;
+  }
+  .header_wrapper .nav-navbar-nav {
+    text-align: center;
+    background-color: red;
+    align-items: center;
+  }
+
+  .navbar-nav {
+    align-items: center;
+  }
+  .navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+  }
+
+  .navbar .navbar-collapse {
+    text-align: center;
+  }
+}

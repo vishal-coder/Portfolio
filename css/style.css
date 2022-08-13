@@ -1,0 +1,208 @@
+/* TABLE OF CONTENTS */
+/*
+2.Navbar
+3.Home
+4.About
+5.Skills
+6.Projects
+7.Contact
+8.Footer
+*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200300,40,500,600,700,800,900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100vh;
+}
+:root {
+  --primary-color: #015fc9;
+  --secondary-color: #0dd3f1;
+  --bg-white: #fff;
+  --bg-dark-blue: #091020;
+  --bg-grey: #fefbf6;
+  --gradient-color: linear-gradient(
+    90deg,
+    rgba(167, 5, 247, 1) 47%,
+    rgba(0, 117, 255, 1) 100%
+  );
+  --gradient-text: radial-gradient(
+    circle,
+    rgba(63, 94, 251, 1) 45%,
+    rgba(170, 70, 252, 1) 100%
+  );
+
+  --primary-font: "Poppins", sans-serif;
+  --primary-text: #015fc9;
+  --text-white: #fff;
+}
+
+body {
+  font-family: var(--primary-font);
+  color: black;
+}
+
+a {
+  text-decoration: none;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-dark-blue);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+}
+
+section {
+  padding: 50px 0;
+}
+
+.container {
+  height: 100%;
+}
+
+.row {
+  height: 100%;
+}
+.main-btn {
+  display: inline-block;
+  border-radius: 50px;
+  transition: all 0.4s ease-in-out;
+  padding: 10px 27px;
+  background-color: transparent;
+  border: 2px solid var(--bg-dark-blue);
+  color: var(--bg-white);
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-decoration: none;
+}
+
+.main-btn:hover {
+  background-color: var(--primary-color);
+  border: var(--primary-color);
+  color: var(--bg-white);
+}
+
+h1 {
+  line-height: 50px;
+  font-weight: 800;
+  color: var(--bg-white);
+}
+h1 span {
+  color: var(--primary-color);
+}
+
+h1 {
+  line-height: 1.3;
+  font-size: 50px;
+  font-weight: 800;
+  color: var(--bg-dark-blue);
+}
+
+h2 {
+  line-height: 1.3;
+  font-weight: 600;
+  color: var(--bg-white);
+}
+
+h3 {
+  line-height: 1.3;
+  font-weight: 500;
+  color: var(--bg-white);
+}
+
+h6 {
+  line-height: 1.3;
+  display: block;
+  letter-spacing: 4px;
+  color: var(--bg-dark-blue);
+  text-transform: uppercase;
+}
+
+p {
+  color: var(--bg-grey);
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+
+.subtitles {
+  display: inline-block;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  line-height: 18px;
+  background-color: var(--gradient-color);
+}
+/* Navbar */
+.header_wrapper .navbar {
+  padding: 15px 0;
+  /* -webkit-transition: all 0.2s linear; */
+}
+
+.header_wrapper .navbar-brand {
+  letter-spacing: 3px;
+  font-weight: 700;
+  line-height: 50px;
+  font-size: 25px;
+}
+
+.header_wrapper .navbar-toggler {
+  border: 0;
+  color: var(--bg-grey);
+  line-height: 2;
+}
+
+.header_wrapper .navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.header_wrapper .nav-item {
+  margin: 0 15px;
+}
+
+.header_wrapper .nav-item .nav-link {
+  position: relative;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--primary-text);
+  display: inline-block;
+}
+
+.header_wrapper .nav-item .nav-link:hover {
+  color: red;
+  border-bottom: 1px solid var(--secondary-color);
+  padding-bottom: 0px;
+}
+
+/*home*/
+.banner_wrapper {
+  width: 100%;
+  height: 100%;
+  min-height: auto;
+  background-image: url(../images/man_working.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+  /* background-color: red; */
+  background-repeat: no-repeat;
+  background-position: left top 7rem;
+  background-size: 155% 77%;
+  flex: 3;
+}
+
+.my-auto {
+  margin-top: auto;
+  margin-bottom: auto;
+}
