@@ -17,8 +17,6 @@ navBar.forEach((element) => {
 });
 
 async function handleSendMail(event) {
-  alert("called");
-
   const name = document.getElementById("Name").value;
   const email = document.getElementById("Email").value;
   const subject = document.getElementById("Subject").value;
@@ -29,20 +27,23 @@ async function handleSendMail(event) {
     subject: subject,
     message: message,
   };
-  console.log(body);
-  alert(body);
+
   const response = await fetch(
     "https://password-reset-guvi-zen.herokuapp.com/api/contactMail",
+    // "http://localhost:4044/api/contactMail",
     {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
         Accept: "application/json",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "POST,PATCH,OPTIONS",
       },
       body: JSON.stringify(body),
     }
   );
 
   const data = await response.json();
-  return data;
+  document.getElementById("contactForm").reset();
+  alert(data.message);
 }
