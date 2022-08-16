@@ -275,7 +275,7 @@ p {
   width: 100%;
   display: flex;
   justify-content: center;
-  gap: 5rem;
+  gap: 4rem;
   flex-wrap: wrap;
 }
 .skillparent {
