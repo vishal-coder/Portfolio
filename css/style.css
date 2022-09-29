@@ -239,6 +239,10 @@ p {
   background-color: RoyalBlue;
 }
 
+.name {
+  letter-spacing: 3px;
+}
+
 /*About section*/
 .about_wrapper {
   background-color: var(--primary-bg);
@@ -271,14 +275,14 @@ p {
   gap: 1rem;
   padding: 1rem;
   justify-content: start;
-  font-size: 29px;
+  font-size: 30px;
   margin-left: 0px;
   padding-left: 0px;
 }
 
 .socialIcon {
   padding: 0.5rem;
-  padding-left: 0px;
+  /* padding-left: 0px; */
 }
 .socialIconbachelor {
   /* padding-left: 0px; */
