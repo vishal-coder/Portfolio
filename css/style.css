@@ -327,6 +327,13 @@ p {
   transition-duration: 1s;
 }
 
+.credentials {
+  text-align: center;
+  /* text-align: left; */
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .projects_wrapper {
   background-color: var(--primary-bg);
   color: black;
